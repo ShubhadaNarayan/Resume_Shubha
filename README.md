@@ -1,5 +1,5 @@
 # RShinyResume_Shubha
-Rshiny_Resume
+Rshiny Resume
 
 
 https://shubhadanarayan.shinyapps.io/ShubhadaNarayan_ShinyResume/
