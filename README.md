@@ -1,4 +1,4 @@
-# ShinyResume_Shubha
+# RShinyResume_Shubha
 Rshiny_Resume
 
 
