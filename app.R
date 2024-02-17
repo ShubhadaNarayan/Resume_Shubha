@@ -12,16 +12,16 @@ library(tidyr)
 library(shinythemes)
 library(ggfortify)
 
-df<- data.frame(Skills=c("Python","R","R shiny","Bash","MySQL","Advanced Excel"),Score=c(2,2,1.5,0.5,2,1),level=c("2yr","2yr","1.5yr","0.5yr","2yr","1yr"))
+df<- data.frame(Skills=c("Python","R","R shiny","Linux","MySQL","CSS","HTML","Advanced Excel"),Score=c(2,2.5,2.5,3,2.5,1.5,1.5,1),level=c("2yr","2.5yr","2.5yr","3yr","2.5yr","1.5yr","1.5yr","1yr"))
 df<- df[order(-df$Score),]
-df2<- data.frame(Skills=c("Data Visualization","Data Analysis","Bioinformatics","NGS","Machine Learning"),Score=c(90,90,90,80,70),level=c("2yr","2yr","1yr","0.5yr","1yr"))
+df2<- data.frame(Skills=c("Data Visualization","Data Analysis","Bioinformatics","NGS","Machine Learning"),Score=c(90,90,90,80,70),level=c("2.5yr","2yr","1yr","0.5yr","1yr"))
 df2<- df2[order(-df2$Score),]
 
 #Website1<- paste0("<a href='","mastersprojectapp.shinyapps.io/blast_app/","' target='_blank'>","mastersprojectapp.shinyapps.io/blast_app/","</a>")
 #Website2<- paste0("<a href='","https://www.linkedin.com/in/shubhada-narayan-97227b19/","' target='_blank'>","https://www.linkedin.com/in/shubhada-narayan-97227b19/","</a>")
 
 
-b64 <- base64enc::dataURI(file="/Users/shubha/Downloads/IMG_0028_2.png", mime="image/png")
+b64 <- base64enc::dataURI(file="/Users/shubha/Resume_Shubha/IMG_0028_2.png", mime="image/png")
 
 title1<- tags$a(tags$img(src=b64,height= "330px", width="330px",style="position:absolute:right:500px"))#style="position:relative;top:-20px;left:-20%;"))
 ui<-fluidPage(
@@ -139,8 +139,11 @@ server <- function(input, output,session){
   })
   
   output$Experience_me<- renderUI({
-    p(strong(h3(tags$u("Experience"))),strong(h3("Junior Scientist 2")),h4(strong(("Aganitha Cognitive Solutions"))),
-      h5("Nov 2021- Present",HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),
+    p(strong(h3(tags$u("Experience"))),strong(h3("Senior Associate Consultant")), h4(strong(("Infosys"))),
+      h5("Sep 2022- Present", HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),
+         HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),"Bangalore, India"),tags$br(),
+      strong(h3("Junior Scientist 2")),h4(strong(("Aganitha Cognitive Solutions"))),
+      h5("Nov 2021- Sept 2022",HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),
          HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),
          HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),HTML('&nbsp;'),"Hyderabad, Telangana, India"),tags$br(),
       strong(h3("Data Analyst")),h4(strong("72 Dragons")),
