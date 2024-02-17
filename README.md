@@ -2,4 +2,4 @@
 Rshiny Resume
 
 
-https://shubhadanarayan.shinyapps.io/ShubhadaNarayan_ShinyResume/
+https://fxwhg9-shubhada-narayan.shinyapps.io/resume_shubha/
